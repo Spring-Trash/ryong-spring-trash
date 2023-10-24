@@ -3,8 +3,6 @@ package com.springtrash.firstweekexample.repository;
 import com.springtrash.firstweekexample.model.MemberDto;
 import org.apache.ibatis.annotations.*;
 
-import java.lang.reflect.Member;
-
 @Mapper
 public interface MemberMapperRepository {
     @Select("SELECT * FROM member WHERE loginId=#{loginId}")
