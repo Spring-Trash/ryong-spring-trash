@@ -31,7 +31,7 @@ public class MemberServiceImpl implements MemberService{
     @Override
     @Transactional
     public int updateMember(String password, String nickname, String statusMessage, String loginId) {
-        return memberMapperRepository.updateMember(password, nickname, statusMessage, String loginId);
+        return memberMapperRepository.updateMember(password, nickname, statusMessage, loginId);
     }
 
     @Override
