@@ -18,16 +18,16 @@ public class MemberDto {
     private String email;
     private String name;
     private String nickname;
-    private String statusMsg;
-    private Date created_at;
-    private Date updated_at;
+    private String statusMessage;
+    private Date createdAt;
+    private Date updatedAt;
 
-    public MemberDto(String loginId, String password, String email, String name, String nickname, String statusMsg){
+    public MemberDto(String loginId, String password, String email, String name, String nickname, String statusMessage){
         this.loginId = loginId;
         this.password = password;
         this.email = email;
         this.name = name;
         this.nickname = nickname;
-        this.statusMsg = statusMsg;
+        this.statusMessage = statusMessage;
     }
 }
