@@ -12,30 +12,29 @@
 <div class="container">
 
     <h2>내 정보 수정하기</h2>
-    <%--    TODO action과 value를 채워 넣으세요--%>
-    <form method="post" action="">
+    <form method="post" action="${root}/user/update">
         <div class="form-floating mb-3">
-            <input readonly type="text" class="form-control" id="floating_input_login_id" name="loginId">
+            <input readonly type="text" class="form-control" id="floating_input_login_id" name="loginId" value="${userinfo.loginId}">
             <label for="floating_input_login_id">ID</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floating_input_password" name="password">
+            <input type="password" class="form-control" id="floating_input_password" name="password" value="${userinfo.password}">
             <label for="floating_input_password">Password</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floating_input_email" name="email">
+            <input readonly type="email" class="form-control" id="floating_input_email" name="email" value="${userinfo.email}">
             <label for="floating_input_email">Email address</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floating_input_user_name" name="name">
+            <input readonly type="text" class="form-control" id="floating_input_user_name" name="name" value="${userinfo.name}">
             <label for="floating_input_user_name">username</label>
         </div>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floating_input_nickname" name="nickname">
+            <input type="text" class="form-control" id="floating_input_nickname" name="nickname" value="${userinfo.nickname}">
             <label for="floating_input_nickname">nickname</label>
         </div>
         <button class="btn btn-primary">수정하기</button>
-        <a href="/" class="btn btn-danger">뒤로가기</a>
+        <a href="${root}/user/mypage" class="btn btn-danger">뒤로가기</a>
     </form>
 </div>
 </body>

@@ -4,7 +4,7 @@
 <body>
     <div class="container">
         <h2>로그인</h2>
-        <form method="post" action="">
+        <form method="post" action="${root}/user/login">
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floating_input_login_id" name="loginId">
                 <label for="floating_input_login_id">ID</label>
@@ -14,9 +14,10 @@
                 <label for="floating_input_password">Password</label>
             </div>
             <button class="btn btn-primary">전송</button>
-            <a href="/" class="btn btn-danger">뒤로가기</a>
+            <a href="${root}/" class="btn btn-danger">뒤로가기</a>
         </form>
     </div>
+    <div>${msg}</div>
 </body>
 <%@include file="includes/footer.jsp"%>
 </html>
