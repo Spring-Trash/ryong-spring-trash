@@ -22,4 +22,11 @@ public class DynamicQueryTest {
         System.out.println("member = " + member);
         Assertions.assertThat(member.getStatusMessage()).isEqualTo("수정테스트최종33");
     }
+
+    @Test
+    @DisplayName("select 동적 쿼리 생성 테스트")
+    void insertMemberTest(){
+        MemberDto memberDto = mmr.findMemberByIdAndPwd("test1", "1234");
+        Assertions.assertThat("test1").isEqualTo(memberDto.getLoginId());
+    }
 }

@@ -4,6 +4,37 @@ import org.apache.ibatis.jdbc.SQL;
 
 public class MemberProvider {
 
+    public String selectMemberById(){
+        return new SQL(){
+            {
+                SELECT("*");
+                FROM("member");
+                WHERE("loginId = #{loginId}");
+            }
+        }.toString();
+    }
+
+    public String selectMemberByIdAndPwd(){
+        return new SQL(){
+            {
+                SELECT("*");
+                FROM("member");
+                WHERE("loginId = #{loginId}");
+                WHERE("password = #{password}");
+            }
+        }.toString();
+    }
+
+    public String insertMember(){
+        return new SQL(){
+            {
+                INSERT_INTO("member");
+                INTO_COLUMNS("loginId", "password", "email", "name", "nickname", "status_message");
+                INTO_VALUES("#{loginId}", "#{password}", "#{email}", "#{name}", "#{nickname}", "#{statusMessage}");
+            }
+        }.toString();
+    }
+
     public String updateMember(final String password, final String nickname, final String statusMessage){
         return new SQL(){
             {
