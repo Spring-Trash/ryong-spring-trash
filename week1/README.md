@@ -18,10 +18,10 @@
 |이름 | O/X |
 |---|-----|
 | MemberDto 생성| O   |
-| Controller 구성 | X   |
-|Service 생성 | X   |
+| Controller 구성 | O   |
+|Service 생성 | O   |
 | Repository | O   |
-| JSP파일 수정 | X   |
+| JSP파일 수정 | O   |
 
 
 ### 제한 사항
@@ -57,3 +57,5 @@ DB 연동을 하실 사람은 `resource` 에 있는 `application.yml` 파일을 
 | 2023-10-18 | 0.0    | 윤주석  | 초안 작성   |
 | 2023-10-22 | 1.0    | 장청룡  | MyBatis 연동 |
 | 2023-10-22 | 1.0    | 장청룡  | MemberMapperRepository 생성 |
+| 2023-10-24 | 1.0    | 장청룡  | MemberService 생성 |
+| 2023-10-25 | 1.0    | 장청룡  | MemberController 생성 |
