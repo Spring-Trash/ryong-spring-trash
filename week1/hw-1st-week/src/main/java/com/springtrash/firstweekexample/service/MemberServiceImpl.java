@@ -23,9 +23,8 @@ public class MemberServiceImpl implements MemberService{
     }
 
     @Override
-    public boolean login(String loginId, String password) {
-        MemberDto member = memberMapperRepository.findMemberByIdAndPwd(loginId, password);
-        return member != null;
+    public MemberDto login(String loginId, String password) {
+        return memberMapperRepository.findMemberByIdAndPwd(loginId, password);
     }
 
     @Override

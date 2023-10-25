@@ -7,7 +7,7 @@ import java.util.List;
 public interface MemberService {
 
     int join(MemberDto memberDto);
-    boolean login(String loginId, String password);
+    MemberDto login(String loginId, String password);
     int updateMember(String password, String nickname, String statusMessage, String loginId);
     MemberDto getMember(String loginId);
 }
