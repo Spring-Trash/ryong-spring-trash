@@ -1,7 +1,7 @@
-package com.springtrash.firstweekexample.service;
+package com.springtrash.secondweek.service;
 
-import com.springtrash.firstweekexample.model.MemberDto;
-import com.springtrash.firstweekexample.repository.MemberMapperRepository;
+import com.springtrash.secondweek.model.MemberDto;
+import com.springtrash.secondweek.repository.MemberMapperRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

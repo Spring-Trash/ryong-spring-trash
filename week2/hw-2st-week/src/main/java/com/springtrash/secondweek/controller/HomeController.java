@@ -1,4 +1,4 @@
-package com.springtrash.firstweekexample.controller;
+package com.springtrash.secondweek.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;

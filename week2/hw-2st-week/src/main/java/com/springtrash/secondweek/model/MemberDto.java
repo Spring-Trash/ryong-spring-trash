@@ -1,4 +1,4 @@
-package com.springtrash.firstweekexample.model;
+package com.springtrash.secondweek.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,6 +18,7 @@ public class MemberDto {
     private String email;
     private String name;
     private String nickname;
+    private String position;
     private String statusMessage;
     private Date createdAt;
     private Date updatedAt;

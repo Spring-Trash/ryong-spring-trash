@@ -1,8 +1,6 @@
-package com.springtrash.firstweekexample.service;
+package com.springtrash.secondweek.service;
 
-import com.springtrash.firstweekexample.model.MemberDto;
-
-import java.util.List;
+import com.springtrash.secondweek.model.MemberDto;
 
 public interface MemberService {
 

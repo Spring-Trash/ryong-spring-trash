@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.springtrash</groupId>
-	<artifactId>first-week-example</artifactId>
+	<artifactId>second-week</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>first-week-example</name>
 	<description>first-week-example</description>

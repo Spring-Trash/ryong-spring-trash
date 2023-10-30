@@ -1,4 +1,4 @@
-package com.springtrash.firstweekexample.repository;
+package com.springtrash.secondweek.repository;
 
 import org.apache.ibatis.jdbc.SQL;
 
@@ -29,8 +29,8 @@ public class MemberProvider {
         return new SQL(){
             {
                 INSERT_INTO("member");
-                INTO_COLUMNS("loginId", "password", "email", "name", "nickname", "status_message");
-                INTO_VALUES("#{loginId}", "#{password}", "#{email}", "#{name}", "#{nickname}", "#{statusMessage}");
+                INTO_COLUMNS("loginId", "password", "email", "name", "nickname", "position", "status_message");
+                INTO_VALUES("#{loginId}", "#{password}", "#{email}", "#{name}", "employee", "#{nickname}", "#{statusMessage}");
             }
         }.toString();
     }

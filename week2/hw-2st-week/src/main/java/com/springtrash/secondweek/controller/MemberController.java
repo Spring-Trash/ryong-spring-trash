@@ -1,7 +1,7 @@
-package com.springtrash.firstweekexample.controller;
+package com.springtrash.secondweek.controller;
 
-import com.springtrash.firstweekexample.model.MemberDto;
-import com.springtrash.firstweekexample.service.MemberService;
+import com.springtrash.secondweek.model.MemberDto;
+import com.springtrash.secondweek.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

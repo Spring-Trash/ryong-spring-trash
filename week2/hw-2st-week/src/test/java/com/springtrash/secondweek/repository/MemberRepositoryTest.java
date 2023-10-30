@@ -1,12 +1,11 @@
-package com.springtrash.firstweekexample.repository;
+package com.springtrash.secondweek.repository;
 
-import com.springtrash.firstweekexample.model.MemberDto;
+import com.springtrash.secondweek.model.MemberDto;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.annotation.Rollback;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.stream.IntStream;

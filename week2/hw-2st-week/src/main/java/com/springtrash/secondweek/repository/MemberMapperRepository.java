@@ -1,6 +1,6 @@
-package com.springtrash.firstweekexample.repository;
+package com.springtrash.secondweek.repository;
 
-import com.springtrash.firstweekexample.model.MemberDto;
+import com.springtrash.secondweek.model.MemberDto;
 import org.apache.ibatis.annotations.*;
 
 @Mapper

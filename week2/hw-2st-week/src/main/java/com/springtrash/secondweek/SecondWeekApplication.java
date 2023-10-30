@@ -1,13 +1,13 @@
-package com.springtrash.firstweekexample;
+package com.springtrash.secondweek;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FirstWeekExampleApplication {
+public class SecondWeekApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FirstWeekExampleApplication.class, args);
+		SpringApplication.run(SecondWeekApplication.class, args);
 	}
 
 }

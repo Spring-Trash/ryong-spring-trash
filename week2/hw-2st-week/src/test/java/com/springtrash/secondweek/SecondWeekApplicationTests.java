@@ -1,10 +1,10 @@
-package com.springtrash.firstweekexample;
+package com.springtrash.secondweek;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FirstWeekExampleApplicationTests {
+class SecondWeekApplicationTests {
 
 	@Test
 	void contextLoads() {

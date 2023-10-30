@@ -1,6 +1,6 @@
-package com.springtrash.firstweekexample.repository;
+package com.springtrash.secondweek.repository;
 
-import com.springtrash.firstweekexample.model.MemberDto;
+import com.springtrash.secondweek.model.MemberDto;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
