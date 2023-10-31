@@ -14,6 +14,7 @@ public interface BoardMapper {
                     one = @One(select = "com.springtrash.secondweek.repository.MemberMapper.findMemberById")),
             @Result(property = "title", column = "title"),
             @Result(property = "content", column = "content"),
+            @Result(property = "isNotice", column = "is_notice"),
             @Result(property = "createdAt", column = "created_at"),
             @Result(property = "updatedAt", column = "updated_at"),
     })

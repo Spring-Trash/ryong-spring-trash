@@ -16,6 +16,7 @@ public class BoardDto {
     private MemberDto member;
     private String title;
     private String content;
+    private boolean isNotice;
     private Date createdAt;
     private Date updatedAt;
 
