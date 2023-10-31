@@ -20,4 +20,13 @@ public interface BoardMapper {
     })
     @SelectProvider(type = BoardProvider.class, method = "findBoardAll")
     List<BoardDto> findBoardAll();
+
+    @InsertProvider(type = BoardProvider.class, method = "insertBoard")
+    int insertBoard(BoardDto boardDto);
+
+    @UpdateProvider(type = BoardProvider.class, method = "updateBoard")
+    int updateBoard(BoardDto boardDto);
+
+    @DeleteProvider(type = BoardProvider.class, method = "deleteBoard")
+    int deleteBoard(int BoardId);
 }
