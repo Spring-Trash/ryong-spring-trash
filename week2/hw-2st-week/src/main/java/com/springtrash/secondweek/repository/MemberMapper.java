@@ -4,7 +4,7 @@ import com.springtrash.secondweek.model.MemberDto;
 import org.apache.ibatis.annotations.*;
 
 @Mapper
-public interface MemberMapperRepository {
+public interface MemberMapper {
     @SelectProvider(type = MemberProvider.class, method = "selectMemberById")
     MemberDto findMemberById(@Param("loginId") String loginId);
 

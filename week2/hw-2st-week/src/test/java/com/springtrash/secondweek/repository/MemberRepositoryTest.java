@@ -14,7 +14,7 @@ import java.util.stream.IntStream;
 class MemberRepositoryTest {
 
     @Autowired
-    private MemberMapperRepository mmr;
+    private MemberMapper mmr;
 
     @Test
     @DisplayName("더미 유저 생성 테스트")

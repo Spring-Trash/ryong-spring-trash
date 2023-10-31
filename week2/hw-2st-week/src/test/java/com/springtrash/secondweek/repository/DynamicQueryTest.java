@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class DynamicQueryTest {
 
     @Autowired
-    private MemberMapperRepository mmr;
+    private MemberMapper mmr;
 
     @Test
     @DisplayName("update 동적 쿼리 생성 테스트")
