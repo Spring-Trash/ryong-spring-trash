@@ -23,6 +23,11 @@ public class BoardServiceImpl implements BoardService{
     }
 
     @Override
+    public BoardDto findBoardById(int boardId) {
+        return boardMapper.findBoardById(boardId);
+    }
+
+    @Override
     public int save(BoardDto boardDto) {
         return boardMapper.insertBoard(boardDto);
     }

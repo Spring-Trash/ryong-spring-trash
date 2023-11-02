@@ -8,7 +8,7 @@ import java.util.List;
 @Mapper
 public interface BoardMapper {
 
-    @Results({
+    @Results(id = "boardMap", value = {
             @Result(property = "boardId", column = "board_id"),
             @Result(property = "member", column = "user_id",
                     one = @One(select = "com.springtrash.secondweek.repository.MemberMapper.findMemberById")),
@@ -20,6 +20,10 @@ public interface BoardMapper {
     })
     @SelectProvider(type = BoardProvider.class, method = "findBoardAll")
     List<BoardDto> findBoardAll();
+
+    @ResultMap("boardMap")
+    @SelectProvider(type = BoardProvider.class, method = "findBoardById")
+    BoardDto findBoardById(int boardId);
 
     @InsertProvider(type = BoardProvider.class, method = "insertBoard")
     int insertBoard(BoardDto boardDto);

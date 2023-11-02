@@ -14,6 +14,16 @@ public class BoardProvider {
         }.toString();
     }
 
+    public String findBoardById(){
+        return new SQL(){
+            {
+                SELECT("*");
+                FROM("board");
+                WHERE("board_id = #{boardId}");
+            }
+        }.toString();
+    }
+
     public String insertBoard(){
         return new SQL(){
             {
